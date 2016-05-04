@@ -16,6 +16,8 @@
 		1F164FEC1CD7F5170036488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F164FEA1CD7F5170036488A /* LaunchScreen.storyboard */; };
 		1F164FF71CD7F5170036488A /* LanesReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F164FF61CD7F5170036488A /* LanesReminderTests.m */; };
 		1F1650021CD7F5170036488A /* LanesReminderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1650011CD7F5170036488A /* LanesReminderUITests.m */; };
+		1F309E8A1CDA519200B15AA4 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */; };
+		1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		1F164FFD1CD7F5170036488A /* LanesReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanesReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1650011CD7F5170036488A /* LanesReminderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanesReminderUITests.m; sourceTree = "<group>"; };
 		1F1650031CD7F5170036488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F309E881CDA519200B15AA4 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
+		1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		1F309E8B1CDA51D800B15AA4 /* VideosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosTableViewController.h; sourceTree = "<group>"; };
+		1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 				1F164FDF1CD7F5170036488A /* ViewController.h */,
 				1F164FE01CD7F5170036488A /* ViewController.m */,
 				1F164FE21CD7F5170036488A /* Main.storyboard */,
+				1F309E881CDA519200B15AA4 /* VideoTableViewCell.h */,
+				1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */,
+				1F309E8B1CDA51D800B15AA4 /* VideosTableViewController.h */,
+				1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */,
 				1F164FE81CD7F5170036488A /* Assets.xcassets */,
 				1F164FEA1CD7F5170036488A /* LaunchScreen.storyboard */,
 				1F164FED1CD7F5170036488A /* Info.plist */,
@@ -273,10 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F309E8A1CDA519200B15AA4 /* VideoTableViewCell.m in Sources */,
 				1F164FE11CD7F5170036488A /* ViewController.m in Sources */,
 				1F164FDE1CD7F5170036488A /* AppDelegate.m in Sources */,
 				1F164FDB1CD7F5170036488A /* main.m in Sources */,
 				1F164FE71CD7F5170036488A /* LanesReminder.xcdatamodeld in Sources */,
+				1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +512,7 @@
 				1F1650081CD7F5170036488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1650091CD7F5170036488A /* Build configuration list for PBXNativeTarget "LanesReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +521,7 @@
 				1F16500B1CD7F5170036488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F16500C1CD7F5170036488A /* Build configuration list for PBXNativeTarget "LanesReminderUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +530,7 @@
 				1F16500E1CD7F5170036488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
