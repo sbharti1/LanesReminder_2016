@@ -11,5 +11,18 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UIButton *btnMap;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnCamera;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnCamCoder;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnMic;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnStorage;
+
+- (IBAction)startAnimation:(id)sender;
+- (void)stopAnimation:(UIButton *)btn;
+
 @end
 
