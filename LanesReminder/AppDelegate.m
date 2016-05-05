@@ -124,4 +124,12 @@
     }
 }
 
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    if(!self.model)
+        return  UIInterfaceOrientationMaskLandscape;
+    else
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+}
+
 @end

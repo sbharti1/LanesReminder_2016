@@ -7,18 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+
 
 @interface ViewController ()
 
-@property (nonnull, strong) NSArray *buttonsList;
+@property (nonatomic, strong) AppDelegate *appDel;
 
 @end
+
+enum {
+    MAPS = 0,
+    PHOTO,
+    VIDEO,
+    MICROPHONE,
+    STORAGE
+};
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.buttonsList = [NSArray arrayWithObjects:self.btnMap,self.btnMic,self.btnCamera,self.btnStorage,self.btnCamCoder, nil];
+    self.appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [self displayCamera];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,34 +38,54 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Utility Methods
 
-- (IBAction)startAnimation:(UIButton *)sender {
-    // stop animation, if any
-    for (UIButton *btn in self.buttonsList) {
-        [self animating:btn withRepeat:NO];
-    }
+- (void)displayCamera {
+    self.appDel.model = YES;
+
+    ImagePickerController *cameraUI = [[ImagePickerController alloc] init];
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    cameraUI.showsCameraControls = NO;
     
-    [self animating:sender withRepeat:YES];
+    cameraUI.cameraViewTransform = CGAffineTransformMakeScale(1.7f, 1.7f);
+    cameraUI.delegate = self;
+    
+    [self presentViewController:cameraUI animated:NO completion:^{}];
 }
 
-- (void)stopAnimation:(UIButton *)btn {
-    [self animating:btn withRepeat:NO];
+- (IBAction)selectPhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 
-- (void)animating:(UIButton *)sender withRepeat:(BOOL)repeat {
+#pragma mark - Image Picker Controller delegate methods
 
-    [UIView animateWithDuration:0.2f animations:^{
-        sender.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
-    } completion:^(BOOL finished) {
-        if (!repeat) return;
-        [UIView animateWithDuration:0.2f animations:^{
-            sender.transform = CGAffineTransformMakeScale(1.2f, 1.2f);
-        } completion:^(BOOL finished) {
-            [self animating:sender withRepeat:repeat];
-        }];
-    }];
-
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+//    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+////    self.imageView.image = chosenImage;
+//    
+//    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
 }
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    self.appDel.model=NO;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+- (BOOL)shouldAutorotate {
+    
+    return NO;
+}
+
 
 @end
