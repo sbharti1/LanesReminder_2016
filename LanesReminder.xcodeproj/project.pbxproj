@@ -18,6 +18,7 @@
 		1F1650021CD7F5170036488A /* LanesReminderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1650011CD7F5170036488A /* LanesReminderUITests.m */; };
 		1F309E8A1CDA519200B15AA4 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */; };
 		1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */; };
+		1F634D411CDB19F6003B5FD9 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D401CDB19F6003B5FD9 /* ImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
 		1F309E8B1CDA51D800B15AA4 /* VideosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosTableViewController.h; sourceTree = "<group>"; };
 		1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosTableViewController.m; sourceTree = "<group>"; };
+		1F634D3F1CDB19F6003B5FD9 /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
+		1F634D401CDB19F6003B5FD9 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +112,13 @@
 		1F164FD81CD7F5170036488A /* LanesReminder */ = {
 			isa = PBXGroup;
 			children = (
+				1F164FE21CD7F5170036488A /* Main.storyboard */,
 				1F164FDC1CD7F5170036488A /* AppDelegate.h */,
 				1F164FDD1CD7F5170036488A /* AppDelegate.m */,
 				1F164FDF1CD7F5170036488A /* ViewController.h */,
 				1F164FE01CD7F5170036488A /* ViewController.m */,
-				1F164FE21CD7F5170036488A /* Main.storyboard */,
+				1F634D3F1CDB19F6003B5FD9 /* ImagePickerController.h */,
+				1F634D401CDB19F6003B5FD9 /* ImagePickerController.m */,
 				1F309E881CDA519200B15AA4 /* VideoTableViewCell.h */,
 				1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */,
 				1F309E8B1CDA51D800B15AA4 /* VideosTableViewController.h */,
@@ -289,6 +294,7 @@
 				1F164FDB1CD7F5170036488A /* main.m in Sources */,
 				1F164FE71CD7F5170036488A /* LanesReminder.xcdatamodeld in Sources */,
 				1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */,
+				1F634D411CDB19F6003B5FD9 /* ImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

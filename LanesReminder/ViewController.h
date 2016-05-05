@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImagePickerController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIButton *btnMap;
@@ -21,8 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnStorage;
 
-- (IBAction)startAnimation:(id)sender;
-- (void)stopAnimation:(UIButton *)btn;
+@property (weak, nonatomic) IBOutlet UIView *viewOverlay;
 
 @end
 
