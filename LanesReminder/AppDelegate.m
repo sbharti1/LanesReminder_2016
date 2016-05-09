@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "CoreDataManager.h"
+#import "Recording.h"
+#import "TestingManager.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    Recording *recording = [TestingManager testRecordingObject];
+    [[CoreDataManager sharedManager] insertRecording:recording];
+    
+    NSLog(@"number of recordings = %@",[[[[CoreDataManager sharedManager] returnListOfRecordings] lastObject] name]);
     return YES;
 }
 

@@ -19,6 +19,20 @@
 		1F309E8A1CDA519200B15AA4 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */; };
 		1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */; };
 		1F634D411CDB19F6003B5FD9 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D401CDB19F6003B5FD9 /* ImagePickerController.m */; };
+		1F634D441CDC0021003B5FD9 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D431CDC0021003B5FD9 /* CoreDataManager.m */; };
+		1F634D511CDC3EB8003B5FD9 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D4F1CDC3EB8003B5FD9 /* Recording.m */; };
+		1F634D541CDC44C7003B5FD9 /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D531CDC44C7003B5FD9 /* ContextManager.m */; };
+		1F7152961CDD0080006270EB /* imageData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F7152951CDD0080006270EB /* imageData.txt */; };
+		1F71529D1CDD052E006270EB /* TestingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71529C1CDD052E006270EB /* TestingManager.m */; };
+		1F7152A61CDD3DCA006270EB /* DateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152A51CDD3DCA006270EB /* DateManager.m */; };
+		1F7152A91CDD48C9006270EB /* CommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152A81CDD48C9006270EB /* CommonManager.m */; };
+		1F7152AD1CDD7FDA006270EB /* CHFormattedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152AC1CDD7FDA006270EB /* CHFormattedButton.m */; };
+		1F7152B01CDD8069006270EB /* UIColor+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152AF1CDD8069006270EB /* UIColor+CustomColor.m */; };
+		1F7152B41CDF9A8D006270EB /* AppStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152B31CDF9A8D006270EB /* AppStateManager.m */; };
+		1F7152B71CDF9A98006270EB /* LocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152B61CDF9A98006270EB /* LocalDataManager.m */; };
+		1F7152BB1CDF9AAF006270EB /* BaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152BA1CDF9AAF006270EB /* BaseDataManager.m */; };
+		1F7152BE1CDFA375006270EB /* LanePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152BD1CDFA375006270EB /* LanePhoto.m */; };
+		1F7152C11CDFA37D006270EB /* LaneVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152C01CDFA37D006270EB /* LaneVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +76,33 @@
 		1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosTableViewController.m; sourceTree = "<group>"; };
 		1F634D3F1CDB19F6003B5FD9 /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
 		1F634D401CDB19F6003B5FD9 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
+		1F634D421CDC0021003B5FD9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		1F634D431CDC0021003B5FD9 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		1F634D4E1CDC3EB8003B5FD9 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		1F634D4F1CDC3EB8003B5FD9 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		1F634D521CDC44C7003B5FD9 /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextManager.h; path = LanesReminder/ContextManager.h; sourceTree = "<group>"; };
+		1F634D531CDC44C7003B5FD9 /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextManager.m; path = LanesReminder/ContextManager.m; sourceTree = "<group>"; };
+		1F7152951CDD0080006270EB /* imageData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imageData.txt; sourceTree = "<group>"; };
+		1F71529B1CDD052E006270EB /* TestingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestingManager.h; path = ../LanesReminder/TestingManager.h; sourceTree = "<group>"; };
+		1F71529C1CDD052E006270EB /* TestingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestingManager.m; path = ../LanesReminder/TestingManager.m; sourceTree = "<group>"; };
+		1F7152A41CDD3DCA006270EB /* DateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateManager.h; sourceTree = "<group>"; };
+		1F7152A51CDD3DCA006270EB /* DateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateManager.m; sourceTree = "<group>"; };
+		1F7152A71CDD48C9006270EB /* CommonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonManager.h; sourceTree = "<group>"; };
+		1F7152A81CDD48C9006270EB /* CommonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonManager.m; sourceTree = "<group>"; };
+		1F7152AB1CDD7FDA006270EB /* CHFormattedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFormattedButton.h; sourceTree = "<group>"; };
+		1F7152AC1CDD7FDA006270EB /* CHFormattedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFormattedButton.m; sourceTree = "<group>"; };
+		1F7152AE1CDD8069006270EB /* UIColor+CustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColor.h"; sourceTree = "<group>"; };
+		1F7152AF1CDD8069006270EB /* UIColor+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColor.m"; sourceTree = "<group>"; };
+		1F7152B21CDF9A8D006270EB /* AppStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStateManager.h; sourceTree = "<group>"; };
+		1F7152B31CDF9A8D006270EB /* AppStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStateManager.m; sourceTree = "<group>"; };
+		1F7152B51CDF9A98006270EB /* LocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataManager.h; sourceTree = "<group>"; };
+		1F7152B61CDF9A98006270EB /* LocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataManager.m; sourceTree = "<group>"; };
+		1F7152B91CDF9AAF006270EB /* BaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataManager.h; sourceTree = "<group>"; };
+		1F7152BA1CDF9AAF006270EB /* BaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataManager.m; sourceTree = "<group>"; };
+		1F7152BC1CDFA375006270EB /* LanePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanePhoto.h; sourceTree = "<group>"; };
+		1F7152BD1CDFA375006270EB /* LanePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanePhoto.m; sourceTree = "<group>"; };
+		1F7152BF1CDFA37D006270EB /* LaneVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneVideo.h; sourceTree = "<group>"; };
+		1F7152C01CDFA37D006270EB /* LaneVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaneVideo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +133,12 @@
 		1F164FCD1CD7F5170036488A = {
 			isa = PBXGroup;
 			children = (
+				1F7152AA1CDD7F84006270EB /* Controls */,
 				1F164FD81CD7F5170036488A /* LanesReminder */,
+				1F7152A31CDD3D59006270EB /* Modals */,
+				1F7152A21CDD3D07006270EB /* Managers */,
+				1F634D451CDC0027003B5FD9 /* CoreData */,
+				1F164FD91CD7F5170036488A /* Supporting Files */,
 				1F164FF51CD7F5170036488A /* LanesReminderTests */,
 				1F1650001CD7F5170036488A /* LanesReminderUITests */,
 				1F164FD71CD7F5170036488A /* Products */,
@@ -123,11 +169,6 @@
 				1F309E891CDA519200B15AA4 /* VideoTableViewCell.m */,
 				1F309E8B1CDA51D800B15AA4 /* VideosTableViewController.h */,
 				1F309E8C1CDA51D800B15AA4 /* VideosTableViewController.m */,
-				1F164FE81CD7F5170036488A /* Assets.xcassets */,
-				1F164FEA1CD7F5170036488A /* LaunchScreen.storyboard */,
-				1F164FED1CD7F5170036488A /* Info.plist */,
-				1F164FE51CD7F5170036488A /* LanesReminder.xcdatamodeld */,
-				1F164FD91CD7F5170036488A /* Supporting Files */,
 			);
 			path = LanesReminder;
 			sourceTree = "<group>";
@@ -135,14 +176,20 @@
 		1F164FD91CD7F5170036488A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F164FEA1CD7F5170036488A /* LaunchScreen.storyboard */,
+				1F164FE81CD7F5170036488A /* Assets.xcassets */,
+				1F164FED1CD7F5170036488A /* Info.plist */,
+				1F7152951CDD0080006270EB /* imageData.txt */,
 				1F164FDA1CD7F5170036488A /* main.m */,
 			);
 			name = "Supporting Files";
+			path = LanesReminder;
 			sourceTree = "<group>";
 		};
 		1F164FF51CD7F5170036488A /* LanesReminderTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F7152B11CDF9A71006270EB /* TestingAssets */,
 				1F164FF61CD7F5170036488A /* LanesReminderTests.m */,
 				1F164FF81CD7F5170036488A /* Info.plist */,
 			);
@@ -156,6 +203,69 @@
 				1F1650031CD7F5170036488A /* Info.plist */,
 			);
 			path = LanesReminderUITests;
+			sourceTree = "<group>";
+		};
+		1F634D451CDC0027003B5FD9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1F164FE51CD7F5170036488A /* LanesReminder.xcdatamodeld */,
+				1F634D4E1CDC3EB8003B5FD9 /* Recording.h */,
+				1F634D4F1CDC3EB8003B5FD9 /* Recording.m */,
+				1F634D421CDC0021003B5FD9 /* CoreDataManager.h */,
+				1F634D431CDC0021003B5FD9 /* CoreDataManager.m */,
+			);
+			name = CoreData;
+			path = LanesReminder;
+			sourceTree = "<group>";
+		};
+		1F7152A21CDD3D07006270EB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F634D521CDC44C7003B5FD9 /* ContextManager.h */,
+				1F634D531CDC44C7003B5FD9 /* ContextManager.m */,
+				1F7152A41CDD3DCA006270EB /* DateManager.h */,
+				1F7152A51CDD3DCA006270EB /* DateManager.m */,
+				1F7152A71CDD48C9006270EB /* CommonManager.h */,
+				1F7152A81CDD48C9006270EB /* CommonManager.m */,
+				1F7152B21CDF9A8D006270EB /* AppStateManager.h */,
+				1F7152B31CDF9A8D006270EB /* AppStateManager.m */,
+				1F7152B51CDF9A98006270EB /* LocalDataManager.h */,
+				1F7152B61CDF9A98006270EB /* LocalDataManager.m */,
+				1F7152B91CDF9AAF006270EB /* BaseDataManager.h */,
+				1F7152BA1CDF9AAF006270EB /* BaseDataManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		1F7152A31CDD3D59006270EB /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1F7152BC1CDFA375006270EB /* LanePhoto.h */,
+				1F7152BD1CDFA375006270EB /* LanePhoto.m */,
+				1F7152BF1CDFA37D006270EB /* LaneVideo.h */,
+				1F7152C01CDFA37D006270EB /* LaneVideo.m */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		1F7152AA1CDD7F84006270EB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1F7152AB1CDD7FDA006270EB /* CHFormattedButton.h */,
+				1F7152AC1CDD7FDA006270EB /* CHFormattedButton.m */,
+				1F7152AE1CDD8069006270EB /* UIColor+CustomColor.h */,
+				1F7152AF1CDD8069006270EB /* UIColor+CustomColor.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		1F7152B11CDF9A71006270EB /* TestingAssets */ = {
+			isa = PBXGroup;
+			children = (
+				1F71529B1CDD052E006270EB /* TestingManager.h */,
+				1F71529C1CDD052E006270EB /* TestingManager.m */,
+			);
+			name = TestingAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F164FEC1CD7F5170036488A /* LaunchScreen.storyboard in Resources */,
+				1F7152961CDD0080006270EB /* imageData.txt in Resources */,
 				1F164FE91CD7F5170036488A /* Assets.xcassets in Resources */,
 				1F164FE41CD7F5170036488A /* Main.storyboard in Resources */,
 			);
@@ -289,12 +400,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F309E8A1CDA519200B15AA4 /* VideoTableViewCell.m in Sources */,
+				1F7152C11CDFA37D006270EB /* LaneVideo.m in Sources */,
+				1F7152BE1CDFA375006270EB /* LanePhoto.m in Sources */,
+				1F7152A61CDD3DCA006270EB /* DateManager.m in Sources */,
 				1F164FE11CD7F5170036488A /* ViewController.m in Sources */,
+				1F71529D1CDD052E006270EB /* TestingManager.m in Sources */,
+				1F634D441CDC0021003B5FD9 /* CoreDataManager.m in Sources */,
+				1F7152B71CDF9A98006270EB /* LocalDataManager.m in Sources */,
 				1F164FDE1CD7F5170036488A /* AppDelegate.m in Sources */,
+				1F634D511CDC3EB8003B5FD9 /* Recording.m in Sources */,
 				1F164FDB1CD7F5170036488A /* main.m in Sources */,
+				1F7152A91CDD48C9006270EB /* CommonManager.m in Sources */,
+				1F7152B41CDF9A8D006270EB /* AppStateManager.m in Sources */,
 				1F164FE71CD7F5170036488A /* LanesReminder.xcdatamodeld in Sources */,
+				1F7152BB1CDF9AAF006270EB /* BaseDataManager.m in Sources */,
+				1F7152B01CDD8069006270EB /* UIColor+CustomColor.m in Sources */,
 				1F309E8D1CDA51D800B15AA4 /* VideosTableViewController.m in Sources */,
 				1F634D411CDB19F6003B5FD9 /* ImagePickerController.m in Sources */,
+				1F634D541CDC44C7003B5FD9 /* ContextManager.m in Sources */,
+				1F7152AD1CDD7FDA006270EB /* CHFormattedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

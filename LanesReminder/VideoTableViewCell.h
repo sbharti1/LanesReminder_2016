@@ -13,7 +13,12 @@
 @property (nonatomic, weak) IBOutlet UILabel *lblVideoName;
 @property (nonatomic, weak) IBOutlet UILabel *lblVideoDuration;
 @property (nonatomic, weak) IBOutlet UILabel *lblVideoSize;
+
 @property (nonatomic, weak) IBOutlet UILabel *lblVideoCreated;
+@property (nonatomic, weak) IBOutlet UILabel *lblVideoModified;
+
 @property (nonatomic, weak) IBOutlet UIImageView *imgViewVideoThumnail;
+
+@property (nonatomic, weak) IBOutlet UIButton *btnViewVideoFavorites;
 
 @end

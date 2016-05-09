@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface ImagePickerController : UIImagePickerController
+
+@property (nonatomic, strong) void(^CompletionHandler)(NSInteger currentlySelectedButtonTag);
+
 
 @end
