@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class CoreDataManager;
+@class Recording;
+@class DateManager;
+
+
 @interface VideosTableViewController : UITableViewController
+
+@property (nonatomic, strong) void(^CompletionHandler)(void);
 
 @end

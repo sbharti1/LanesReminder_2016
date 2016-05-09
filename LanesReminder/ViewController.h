@@ -9,21 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ImagePickerController.h"
 
+@class CommonManager;
+
 
 @interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-
-@property (weak, nonatomic) IBOutlet UIButton *btnMap;
-
-@property (weak, nonatomic) IBOutlet UIButton *btnCamera;
-
-@property (weak, nonatomic) IBOutlet UIButton *btnCamCoder;
-
-@property (weak, nonatomic) IBOutlet UIButton *btnMic;
-
-@property (weak, nonatomic) IBOutlet UIButton *btnStorage;
-
-@property (weak, nonatomic) IBOutlet UIView *viewOverlay;
 
 @end
 

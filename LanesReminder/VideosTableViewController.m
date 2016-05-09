@@ -8,6 +8,10 @@
 
 #import "VideosTableViewController.h"
 #import "VideoTableViewCell.h"
+#import "CoreDataManager.h"
+#import "DateManager.h"
+
+#import "Recording.h"
 
 
 @interface VideosTableViewController ()
@@ -19,28 +23,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // change the back button to cancel and add an event handler
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(handleBack:)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = backButton;
 }
+
+- (void)handleBack:(id)sender {
+    // pop to root view controller
+    if (self.CompletionHandler) {
+        self.CompletionHandler();
+    }
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:NO];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:NO];
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
-}
+#pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 5;
+    return [[[CoreDataManager sharedManager] returnListOfRecordings] count];
 }
 
 
@@ -52,10 +70,21 @@
         cell = [[VideoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"identifier"];
     }
     
-    cell.lblVideoName.text = @"Lane Recording";
-    cell.lblVideoSize.text = @"3.1mb";
-    cell.lblVideoDuration.text = @"5.0Sec";
-    cell.lblVideoCreated.text = @"28-May-2016";
+    Recording *currentRecording = [[[CoreDataManager sharedManager] returnListOfRecordings] objectAtIndex:indexPath.row];
+    cell.lblVideoName.text = currentRecording.name;
+    cell.lblVideoSize.text = [NSString stringWithFormat:@"%@ MB",currentRecording.size];
+    cell.lblVideoDuration.text = [NSString stringWithFormat:@"%@ Min",currentRecording.duration];
+    
+    cell.lblVideoCreated.text = [DateManager longDateTimeStringFromDate:currentRecording.dateCreated];
+    cell.lblVideoModified.text = [DateManager longDateTimeStringFromDate:currentRecording.dateModified];
+
+    cell.imgViewVideoThumnail.image = [UIImage imageWithData:currentRecording.recordedData];
+    
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    } else {
+        cell.backgroundColor = [UIColor whiteColor];
+    }
     
     return cell;
 }

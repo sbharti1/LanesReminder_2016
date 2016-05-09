@@ -7,6 +7,8 @@
 //
 
 #import "ImagePickerController.h"
+#import "CommonManager.h"
+
 
 const float BUTTON_HEIGHT = 50.0f;
 const float BUTTON_WIDTH = 50.0f;
@@ -18,6 +20,13 @@ const NSInteger NUMBER_OF_BUTTONS = 5;
 // This will keep track of paddings spaces, like for 5 buttons there would be 6 padding spaces
 const NSInteger NUMBER_OF_PADDINGS = 6;
 
+enum {
+    MAP = 0,
+    PHOTO,
+    VIDEO,
+    MICROPHONE,
+    STORAGE
+};
 
 @interface ImagePickerController ()
 
@@ -62,11 +71,8 @@ const NSInteger NUMBER_OF_PADDINGS = 6;
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(value, INITIAL_X_AXIS, BUTTON_WIDTH, BUTTON_HEIGHT)];
         [btn setBackgroundColor:[UIColor clearColor]];
         btn.tag = index;
-        
-        // set layer
-//        btn.layer.cornerRadius = btn.frame.size.width / 2;
-//        btn.layer.borderWidth = 1.0f;
-//        btn.layer.borderColor = [UIColor whiteColor].CGColor;
+        btn.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        btn.alpha = 0.8f;
         
         //set action
         [btn addTarget:self action:@selector(currentIndex:) forControlEvents:UIControlEventTouchUpInside];
@@ -85,23 +91,23 @@ const NSInteger NUMBER_OF_PADDINGS = 6;
     NSString *imageName = nil;
     NSString *highlightedImageName = nil;
     switch (button.tag) {
-        case 0:
+        case MAP:
             imageName = @"MapD";
             highlightedImageName = @"MapDHigh";
             break;
-        case 1:
+        case PHOTO:
             imageName = @"Camera";
             highlightedImageName = @"CameraHigh";
             break;
-        case 2:
+        case VIDEO:
             imageName = @"CamCoder";
             highlightedImageName = @"CamCoderHigh";
             break;
-        case 3:
+        case MICROPHONE:
             imageName = @"Mic";
             highlightedImageName = @"MicHigh";
             break;
-        case 4:
+        case STORAGE:
             imageName = @"Storage";
             highlightedImageName = @"StorageHigh";
             break;
@@ -114,7 +120,11 @@ const NSInteger NUMBER_OF_PADDINGS = 6;
 - (void)currentIndex:(UIButton *)pressedButton {
     
     NSLog(@"Tag = %ld",(long)pressedButton.tag);
+    if (self.CompletionHandler) {
+        self.CompletionHandler(pressedButton.tag);
+    }
     [self startAnimatingWithControl:pressedButton];
+   
 }
 
 - (void)startAnimatingWithControl:(UIView *)control {
@@ -136,14 +146,13 @@ const NSInteger NUMBER_OF_PADDINGS = 6;
 
 #pragma mark - Segue Methods
 
-/*
- #pragma mark - Navigation
- 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
+     
+     
  }
- */
+
 
 @end
