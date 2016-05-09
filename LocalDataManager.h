@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @class BaseDataManager;
-
+@class LaneVideo;
 
 @interface LocalDataManager : NSObject
 
 + (instancetype)sharedManager;
 
+- (void)setVideoSettings:(LaneVideo *)laneVideo;
+- (LaneVideo *)returnVideoSettings;
 
 @end

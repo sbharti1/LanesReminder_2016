@@ -37,9 +37,8 @@ static BaseDataManager *baseDataManager;
 
 
 // save data value to UserDefaults
-- (void)setData:(NSString *)objectToArchive forKey:(NSString *)key {
-    
-    NSData *data = (NSData *)[self getObjectForKey:key];
+- (void)setData:(NSData *)data forKey:(NSString *)key {
+
     [self saveObject:data forKey:key];
 }
 
