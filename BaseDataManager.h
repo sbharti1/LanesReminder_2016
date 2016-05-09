@@ -26,7 +26,7 @@
 - (NSString *)getStringForKey:(NSString *)key;
 
 // save string value to UserDefaults
-- (void)setData:(NSString *)data forKey:(NSString *)key;
+- (void)setData:(NSData *)data forKey:(NSString *)key;
 - (NSData *)getDataForKey:(NSString *)key;
 
 // save any kind of object to UserDefaults

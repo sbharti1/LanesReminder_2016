@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @class LocalDataManager;
+@class LaneVideo;
 
 
 @interface AppStateManager : NSObject
 
+- (void)setVideoSettings:(LaneVideo *)laneVideo;
+- (LaneVideo *)returnVideoSettings;
 
 @end

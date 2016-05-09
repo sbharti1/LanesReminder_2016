@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.appDel = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [self displayCamera];
+    //[self displayCamera];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +46,7 @@
     self.appDel.model = YES;
 
     self.cameraUI = [[ImagePickerController alloc] init];
-    self.cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.cameraUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     self.cameraUI.showsCameraControls = NO;
     
     self.cameraUI.cameraViewTransform = CGAffineTransformMakeScale(1.7f, 1.7f);
