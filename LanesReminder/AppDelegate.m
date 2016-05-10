@@ -10,6 +10,11 @@
 #import "CoreDataManager.h"
 #import "Recording.h"
 #import "TestingManager.h"
+#import "AppInitializer.h"
+#import "LocalDataManager.h"
+#import "AppStateManager.h"
+#import "LaneVideo.h"
+#import "LanePhoto.h"
 
 
 @interface AppDelegate ()
@@ -24,8 +29,14 @@
 
     Recording *recording = [TestingManager testRecordingObject];
     [[CoreDataManager sharedManager] insertRecording:recording];
-    
     NSLog(@"number of recordings = %@",[[[[CoreDataManager sharedManager] returnListOfRecordings] lastObject] name]);
+
+    [[AppInitializer sharedAppState] initialAppSettings];
+    
+    NSLog(@"duration: %ld /n quality: %ld",(long)[[[AppStateManager sharedManager] returnVideoSettings] duration],[[[AppStateManager sharedManager] returnVideoSettings] quality]);
+        
+    NSLog(@"duration: %ld /n quality: %ld",(long)[[[AppStateManager sharedManager] returnPhotoSettings] duration],[[[AppStateManager sharedManager] returnPhotoSettings] quality]);
+
     return YES;
 }
 

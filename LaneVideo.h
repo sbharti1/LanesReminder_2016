@@ -11,15 +11,15 @@
 
 typedef  NS_ENUM(NSInteger, VideoQuality) {
     
-    LOW = 0,
-    MEDIUM,
-    HIGH
+    VIDEO_QUALITY_LOW = 0,
+    VIDEO_QUALITY_MEDIUM,
+    VIDEO_QUALITY_HIGH
 };
 
 
 @interface LaneVideo : NSObject <NSCoding>
 
-@property NSInteger time;
+@property NSInteger duration;
 @property VideoQuality quality;
 
 @end

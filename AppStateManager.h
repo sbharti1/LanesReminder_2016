@@ -10,11 +10,18 @@
 
 @class LocalDataManager;
 @class LaneVideo;
+@class LanePhoto;
 
 
 @interface AppStateManager : NSObject
 
++ (instancetype)sharedManager;
+
 - (void)setVideoSettings:(LaneVideo *)laneVideo;
 - (LaneVideo *)returnVideoSettings;
+
+- (void)setPhotoSettings:(LanePhoto *)lanePhoto;
+- (LanePhoto *)returnPhotoSettings;
+
 
 @end

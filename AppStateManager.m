@@ -9,7 +9,7 @@
 #import "AppStateManager.h"
 #import "LocalDataManager.h"
 #import "LaneVideo.h"
-
+#import "LanePhoto.h"
 
 
 static AppStateManager *appDataManager;
@@ -25,6 +25,7 @@ static AppStateManager *appDataManager;
     return appDataManager;
 }
 
+// Video settings
 
 - (void)setVideoSettings:(LaneVideo *)laneVideo {
     
@@ -34,6 +35,19 @@ static AppStateManager *appDataManager;
 - (LaneVideo *)returnVideoSettings {
     
     return [[LocalDataManager sharedManager] returnVideoSettings];
+}
+
+
+// Photo settings
+
+- (void)setPhotoSettings:(LanePhoto *)lanePhoto {
+    
+    [[LocalDataManager sharedManager] setPhotoSettings:lanePhoto];
+}
+
+- (LanePhoto *)returnPhotoSettings {
+    
+    return [[LocalDataManager sharedManager] returnPhotoSettings];
 }
 
 @end
