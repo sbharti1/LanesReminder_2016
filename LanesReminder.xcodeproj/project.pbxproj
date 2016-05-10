@@ -22,6 +22,7 @@
 		1F634D441CDC0021003B5FD9 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D431CDC0021003B5FD9 /* CoreDataManager.m */; };
 		1F634D511CDC3EB8003B5FD9 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D4F1CDC3EB8003B5FD9 /* Recording.m */; };
 		1F634D541CDC44C7003B5FD9 /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F634D531CDC44C7003B5FD9 /* ContextManager.m */; };
+		1F6CFEAE1CE1811F0074A96B /* AppInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CFEAD1CE1811F0074A96B /* AppInitializer.m */; };
 		1F7152961CDD0080006270EB /* imageData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F7152951CDD0080006270EB /* imageData.txt */; };
 		1F71529D1CDD052E006270EB /* TestingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71529C1CDD052E006270EB /* TestingManager.m */; };
 		1F7152A61CDD3DCA006270EB /* DateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7152A51CDD3DCA006270EB /* DateManager.m */; };
@@ -82,6 +83,9 @@
 		1F634D4F1CDC3EB8003B5FD9 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
 		1F634D521CDC44C7003B5FD9 /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextManager.h; path = LanesReminder/ContextManager.h; sourceTree = "<group>"; };
 		1F634D531CDC44C7003B5FD9 /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextManager.m; path = LanesReminder/ContextManager.m; sourceTree = "<group>"; };
+		1F6CFEAC1CE1811F0074A96B /* AppInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInitializer.h; sourceTree = "<group>"; };
+		1F6CFEAD1CE1811F0074A96B /* AppInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInitializer.m; sourceTree = "<group>"; };
+		1F6CFEAF1CE183010074A96B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		1F7152951CDD0080006270EB /* imageData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imageData.txt; sourceTree = "<group>"; };
 		1F71529B1CDD052E006270EB /* TestingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestingManager.h; path = ../LanesReminder/TestingManager.h; sourceTree = "<group>"; };
 		1F71529C1CDD052E006270EB /* TestingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestingManager.m; path = ../LanesReminder/TestingManager.m; sourceTree = "<group>"; };
@@ -233,6 +237,9 @@
 				1F7152B61CDF9A98006270EB /* LocalDataManager.m */,
 				1F7152B91CDF9AAF006270EB /* BaseDataManager.h */,
 				1F7152BA1CDF9AAF006270EB /* BaseDataManager.m */,
+				1F6CFEAC1CE1811F0074A96B /* AppInitializer.h */,
+				1F6CFEAD1CE1811F0074A96B /* AppInitializer.m */,
+				1F6CFEAF1CE183010074A96B /* Constants.h */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -407,6 +414,7 @@
 				1F71529D1CDD052E006270EB /* TestingManager.m in Sources */,
 				1F634D441CDC0021003B5FD9 /* CoreDataManager.m in Sources */,
 				1F7152B71CDF9A98006270EB /* LocalDataManager.m in Sources */,
+				1F6CFEAE1CE1811F0074A96B /* AppInitializer.m in Sources */,
 				1F164FDE1CD7F5170036488A /* AppDelegate.m in Sources */,
 				1F634D511CDC3EB8003B5FD9 /* Recording.m in Sources */,
 				1F164FDB1CD7F5170036488A /* main.m in Sources */,

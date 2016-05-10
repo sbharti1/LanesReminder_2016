@@ -8,7 +8,7 @@
 
 #import "LaneVideo.h"
 
-#define TIME @"time"
+#define TIME @"duration"
 #define QUALITY @"quality"
 
 
@@ -19,8 +19,8 @@
     
     self = [super init];
     if (self != nil) {
-        
-        self.time = [decoder decodeIntegerForKey:TIME];
+                
+        self.duration = [decoder decodeIntegerForKey:TIME];
         self.quality = [decoder decodeIntegerForKey:QUALITY];
     }
     
@@ -29,7 +29,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     
-    [aCoder encodeInteger:self.time forKey:TIME];
+    [aCoder encodeInteger:self.duration forKey:TIME];
     [aCoder encodeInteger:self.quality forKey:QUALITY];
 }
 

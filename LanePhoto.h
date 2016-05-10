@@ -10,15 +10,15 @@
 
 typedef NS_ENUM(NSInteger, PhotoQuality) {
     
-    LOW = 0,
-    MEDIUM,
-    HIGH
+    PHOTO_QUALITY_LOW = 0,
+    PHOTO_QUALITY_MEDIUM,
+    PHOTO_QUALITY_HIGH
 };
 
 
 @interface LanePhoto : NSObject <NSCoding>
 
-@property NSInteger time;
+@property NSInteger duration;
 @property PhotoQuality quality;
 
 @end

@@ -24,6 +24,8 @@ static LocalDataManager *localDataManager;
     return localDataManager;
 }
 
+// Video Settings
+
 - (void)setVideoSettings:(LaneVideo *)laneVideo {
     
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:laneVideo];
@@ -36,5 +38,17 @@ static LocalDataManager *localDataManager;
     return laneVideo;
 }
 
+// Photo Settings
+- (void)setPhotoSettings:(LanePhoto *)lanePhoto {
+    
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:lanePhoto];
+    [[BaseDataManager sharedManager] setData:data forKey:@"LANE_PHOTO"];
+}
+
+- (LanePhoto *)returnPhotoSettings {
+    
+    LanePhoto  *lanePhoto = (LanePhoto *)[NSKeyedUnarchiver unarchiveObjectWithData:[[BaseDataManager sharedManager] getDataForKey:@"LANE_PHOTO"]];
+    return lanePhoto;
+}
 
 @end

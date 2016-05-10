@@ -71,7 +71,6 @@ enum {
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(value, INITIAL_X_AXIS, BUTTON_WIDTH, BUTTON_HEIGHT)];
         [btn setBackgroundColor:[UIColor clearColor]];
         btn.tag = index;
-        btn.backgroundColor = [UIColor groupTableViewBackgroundColor];
         btn.alpha = 0.8f;
         
         //set action
